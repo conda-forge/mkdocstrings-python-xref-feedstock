@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.8
     - mkdocstrings-python >=1.6.2,<2.0
+    - griffe >=1.0
 
 test:
   imports:
