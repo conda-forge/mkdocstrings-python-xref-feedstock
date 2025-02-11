@@ -1,13 +1,13 @@
 {% set name = "mkdocstrings-python-xref" %}
-{% set version = "1.6.0.1" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocstrings_python_xref-{{ version }}.tar.gz
-  sha256: ce26e37c58d3c4fad16aece914f4eec1795f1970282a9c219682d3590fdc10a1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mkdocstrings_python_xref-{{ version }}.tar.gz
+  sha256: bd8d842979f3488379c053251f51a0903bfc674fe974a9b7bd7b2aa873af836d
 
 build:
   noarch: python
