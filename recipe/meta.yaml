@@ -1,5 +1,6 @@
 {% set name = "mkdocstrings-python-xref" %}
 {% set version = "1.6.2" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python ={{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - mkdocstrings-python >=1.6.2,<2.0
     - griffe >=1.0
 
@@ -30,6 +31,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
