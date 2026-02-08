@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - hatchling
     - pip
   run:
-    - python >=3.8
-    - mkdocstrings-python >=1.6.2,<2.0
+    - python >=3.10
+    - mkdocstrings-python >=2.0,<3.0
 
 test:
   imports:
